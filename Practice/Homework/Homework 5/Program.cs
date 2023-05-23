@@ -8,7 +8,7 @@ int size = Convert.ToInt32(Console.ReadLine());
 _refresh:
 Console.WriteLine("Введите минимальное значение массива"); // 100
 int min = Convert.ToInt32(Console.ReadLine());
-if (min < 100)
+if (min < 100 || min > 999)
 {
     Console.WriteLine("Введено некорректное минимальное трехзначное число");
     goto _refresh;
